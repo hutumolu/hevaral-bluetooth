@@ -39,7 +39,7 @@ class _SocketPageState extends State<SocketPage> {
             .setExtraHeaders({'token': '123456'})
             .disableAutoConnect()
             .build();
-    _socket = IO.io('http://192.168.31.26:3000', option);
+    _socket = IO.io('http://dev.hevaral.com', option);
     _socket.onConnect((data) {
       print('连接成功');
       if (mounted) {
